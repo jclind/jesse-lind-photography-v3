@@ -1,1 +1,54 @@
 @import '../../helpers.scss';
+
+.add-images-page {
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  .select-container {
+    max-width: 300px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    .image-form {
+      .file-upload-container {
+        border: 2px dashed #aaa;
+        padding: 20px;
+        border-radius: 5px;
+        .file-upload-label {
+          cursor: pointer;
+          color: #555;
+        }
+
+        .file-upload-input {
+          display: none;
+        }
+      }
+
+      .images-container {
+        .added-image {
+          position: relative;
+          .remove-image-btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            .icon {
+              height: 25px;
+              width: 25px;
+            }
+          }
+          .thumbnail-container {
+            height: 150px;
+            width: 150px;
+            img {
+              height: 100%;
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
