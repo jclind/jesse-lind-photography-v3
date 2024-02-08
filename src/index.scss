@@ -22,6 +22,7 @@ body {
 }
 * {
   font-family: $font-family;
+  letter-spacing: 0.1px;
 }
 
 button {
@@ -63,6 +64,22 @@ button.submit-btn {
   align-items: center;
   height: 100%;
   width: 100%;
+}
+
+.textarea,
+.input {
+  outline: none;
+  border: 1px solid $secondary-background;
+  background: $white;
+  width: 100%;
+  border-radius: $border-radius;
+  height: 2rem;
+  color: $primary;
+  font-size: 1rem;
+  font-weight: 600;
+  resize: vertical;
+  box-sizing: border-box;
+  padding: 0.25rem;
 }
 
 .loading-screen {

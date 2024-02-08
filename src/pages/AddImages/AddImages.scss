@@ -47,6 +47,25 @@
               object-fit: cover;
             }
           }
+          .image-data {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+            label {
+              font-size: 0.9rem;
+              font-weight: 600;
+            }
+            .select-container {
+              // width: 100%;
+            }
+            .name-input {
+            }
+            .input-container {
+              width: 100%;
+              box-sizing: border-box;
+            }
+          }
         }
       }
     }
